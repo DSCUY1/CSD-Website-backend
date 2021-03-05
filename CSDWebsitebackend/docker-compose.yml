@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  csdwebsite:
+    container_name: csdwebsitebackend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 6000:6000
+    depends_on:
+      - db
+
+  dbcsdwebsite:
+    container_name: mysqlcsdwebsite
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      MYSQL_DATABASE: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    ports: 
+      - 3307:3306
+    volumes:
+      - /./dbdata/var/lib/mysql
+   
+    
