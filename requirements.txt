@@ -3,3 +3,4 @@ djangorestframework==3.12.2
 mysqlclient==2.0.1
 django-mysql==3.9
 PyJWT==2.0.1
+pillow==8.1.2

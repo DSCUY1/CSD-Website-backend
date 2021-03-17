@@ -59,7 +59,8 @@ class UsersSerializer(serializers.ModelSerializer):
             'password',
             "matricule",
             'role',
-            "surv"
+            "surv",
+            'types',
         ]
         extra_kwargs = {
             "password": {"write_only": True}
