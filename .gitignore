@@ -1,0 +1,12 @@
+/CSDWebsitebackend/__pycache__/*
+/db.sqlite3
+
+/actualites/__pycache__/*
+/actualites/migrations/__pycache__/*
+
+/users/__pycache__/*
+/users/migrations/__pycache__/*
+
+/.env/*
+/env/*
+.env
