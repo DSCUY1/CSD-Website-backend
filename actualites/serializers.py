@@ -1,5 +1,5 @@
 from rest_framework import serializers 
-from .models import Event, Article, Information
+from .models import Event, Article, Information, Message
 from users.models import User
 from users.serializers import UsersSerializer
 from rest_framework.serializers import SerializerMethodField
